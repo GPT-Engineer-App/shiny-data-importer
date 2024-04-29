@@ -59,10 +59,19 @@ const Index = () => {
           <Button leftIcon={<FaChartBar />} colorScheme="orange" mr={2}>
             Bar Chart
           </Button>
-          <Button leftIcon={<FaChartBar />} colorScheme="green" mr={2}>
+          <Button leftIcon={<FaChartBar />} colorScheme="green">
             Scatter Plot
           </Button>
-          <Button leftIcon={<FaChartBar />} colorScheme="red">
+          <Button leftIcon={<FaChartBar />} colorScheme="purple" mr={2}>
+            Boxplot
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="pink" mr={2}>
+            Violin Plot
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="yellow" mr={2}>
+            Pareto Plot
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="red" mr={2}>
             Histogram
           </Button>
         </Box>
