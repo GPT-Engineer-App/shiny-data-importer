@@ -1,4 +1,4 @@
-import { Box, Button, Text, VStack, Input, Link } from "@chakra-ui/react";
+import { Box, Button, Text, VStack, Input, Link, FormControl, FormLabel } from "@chakra-ui/react";
 import { FaFileCsv, FaFileExcel, FaFileDownload, FaChartBar } from "react-icons/fa";
 
 const Index = () => {
@@ -55,6 +55,24 @@ const Index = () => {
           </Button>
         </Box>
 
+        <Box>
+          <Text mb={2}>Statistical Analysis:</Text>
+          <FormControl>
+            <FormLabel>Dependent Variable:</FormLabel>
+            <Input placeholder="Enter dependent variable" />
+            <FormLabel mt={2}>Independent Variable:</FormLabel>
+            <Input placeholder="Enter independent variable" />
+          </FormControl>
+          <Button leftIcon={<FaChartBar />} colorScheme="green" mt={2}>
+            Parametric Test
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="orange" mt={2} ml={2}>
+            Non-Parametric Test
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="purple" mt={2} ml={2}>
+            Generate Visualization
+          </Button>
+        </Box>
         <Box>
           <Text mt={4}>For more complex data analysis, please use the R-based version of uniDanalyst.</Text>
           <Link href="https://github.com/yourgithubrepo/uniDanalyst" isExternal color="blue.500">
