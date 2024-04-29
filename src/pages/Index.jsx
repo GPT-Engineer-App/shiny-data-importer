@@ -1,4 +1,4 @@
-import { Box, Button, Text, VStack, Input, Link, FormControl, FormLabel } from "@chakra-ui/react";
+import { Box, Button, Text, VStack, Input, Link, FormControl, FormLabel, Select } from "@chakra-ui/react";
 import { FaFileCsv, FaFileExcel, FaFileDownload, FaChartBar } from "react-icons/fa";
 
 const Index = () => {
@@ -62,11 +62,23 @@ const Index = () => {
             <Input placeholder="Enter dependent variable" />
             <FormLabel mt={2}>Independent Variable:</FormLabel>
             <Input placeholder="Enter independent variable" />
+            <FormLabel mt={2}>Type of Parametric Test:</FormLabel>
+            <Select placeholder="Select test type">
+              <option value="t-test">T-Test</option>
+              <option value="anova">ANOVA</option>
+              <option value="regression">Regression</option>
+            </Select>
           </FormControl>
           <Button leftIcon={<FaChartBar />} colorScheme="green" mt={2}>
             Parametric Test
           </Button>
-          <Button leftIcon={<FaChartBar />} colorScheme="orange" mt={2} ml={2}>
+          <FormLabel mt={2}>Type of Non-Parametric Test:</FormLabel>
+          <Select placeholder="Select test type" mt={2}>
+            <option value="mann-whitney">Mann-Whitney U Test</option>
+            <option value="wilcoxon">Wilcoxon Signed-Rank Test</option>
+            <option value="kruskal-wallis">Kruskal-Wallis Test</option>
+          </Select>
+          <Button leftIcon={<FaChartBar />} colorScheme="orange" mt={4} ml={2}>
             Non-Parametric Test
           </Button>
           <Button leftIcon={<FaChartBar />} colorScheme="purple" mt={2} ml={2}>
