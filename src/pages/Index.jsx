@@ -50,8 +50,20 @@ const Index = () => {
 
         <Box>
           <Text mb={2}>Visualizations:</Text>
-          <Button leftIcon={<FaChartBar />} colorScheme="cyan">
+          <Button leftIcon={<FaChartBar />} colorScheme="cyan" mr={2}>
             Generate Chart
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="blue" mr={2}>
+            Line Plot
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="orange" mr={2}>
+            Bar Chart
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="green" mr={2}>
+            Scatter Plot
+          </Button>
+          <Button leftIcon={<FaChartBar />} colorScheme="red">
+            Histogram
           </Button>
         </Box>
 
